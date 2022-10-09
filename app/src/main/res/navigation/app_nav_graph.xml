@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/onBoardingFragment"
+    android:id="@+id/app_nav_graph"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="xml.one.pass.presentation.welcome.WelcomeFragment"
+        android:label="Welcome fragment"
+        tools:layout="@layout/welcome_fragment" >
+        <action
+            android:id="@+id/toRegisterFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/toLoginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="xml.one.pass.presentation.login.LoginFragment"
+        android:label="Login fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/toRegisterFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/toForgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/toHomeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="xml.one.pass.presentation.register.RegisterFragment"
+        android:label="Register fragment"
+        tools:layout="@layout/register_fragment" >
+        <action
+            android:id="@+id/toLoginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/toHomeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="xml.one.pass.presentation.forgotPassword.ForgotPasswordFragment"
+        android:label="Forgot password fragment"
+        tools:layout="@layout/forgot_password_fragment" >
+        <action
+            android:id="@+id/toResetPasswordFragment"
+            app:destination="@id/resetPasswordFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="xml.one.pass.presentation.resetPassword.ResetPasswordFragment"
+        android:label="Reset password fragment"
+        tools:layout="@layout/reset_password_fragment" >
+        <argument
+            android:name="emailAddress"
+            app:argType="string" />
+        <action
+            android:id="@+id/toLoginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_out_to_left"
+            app:exitAnim="@anim/slide_in_from_right"
+            app:popEnterAnim="@anim/slide_out_to_right"
+            app:popExitAnim="@anim/slide_in_from_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="xml.one.pass.presentation.home.HomeFragment"
+        android:label="Home fragment"
+        tools:layout="@layout/home_fragment" >
+        <argument
+            android:name="hasBottomNav"
+            android:defaultValue="true"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/toPasswordDetailsFragment"
+            app:destination="@id/passwordDetailsFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/passwordDetailsFragment"
+        android:name="xml.one.pass.presentation.password.details.PasswordDetailsFragment"
+        android:label="Password details fragment"
+        tools:layout="@layout/password_details_fragment" >
+        <argument
+            android:name="passwordID"
+            app:argType="integer" />
+        <action
+            android:id="@+id/toEditPasswordFragment"
+            app:destination="@id/editPasswordFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="xml.one.pass.presentation.profile.ProfileFragment"
+        android:label="Profile fragment"
+        tools:layout="@layout/profile_fragment" >
+        <argument
+            android:name="hasBottomNav"
+            android:defaultValue="true"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/toLoginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_from_left"
+            app:exitAnim="@anim/slide_out_to_right"
+            app:popEnterAnim="@anim/slide_in_from_right"
+            app:popExitAnim="@anim/slide_out_to_left"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <action
+        android:id="@+id/toAddPasswordFragment"
+        app:destination="@id/addPasswordFragment"
+        app:enterAnim="@anim/slide_in_from_right"
+        app:exitAnim="@anim/slide_out_to_left"
+        app:popEnterAnim="@anim/slide_in_from_left"
+        app:popExitAnim="@anim/slide_out_to_right" />
+
+    <fragment
+        android:id="@+id/addPasswordFragment"
+        android:name="xml.one.pass.presentation.password.manage.add.AddPasswordFragment"
+        android:label="Add password fragment"
+        tools:layout="@layout/password_add_fragment" />
+
+    <fragment
+        android:id="@+id/editPasswordFragment"
+        android:name="xml.one.pass.presentation.password.manage.edit.EditPasswordFragment"
+        android:label="Add password fragment"
+        tools:layout="@layout/password_add_fragment" >
+        <argument
+            android:name="passwordId"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>

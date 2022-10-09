@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>EmptyFunctionBlock:RecyclerExtension.kt$&lt;no name provided>${}</ID>
+    <ID>LongParameterList:DialogExtension.kt$( @DrawableRes icon: Int? = null, headline: String, supportingText: String, dismissLabel: String? = null, isDecisionVisible: Boolean = false, decisionLabel: String? = null, onDismissCallBack: (() -> (Unit))? = null, onDecisionCallBack: (() -> (Unit))? = null )</ID>
+    <ID>LongParameterList:PasswordDao.kt$PasswordDao$( id: Int, siteName: String, url: String = "", userName: String = "", email: String, password: String, phoneNumber: String = "", securityQuestions: String = "", timeUpdated: String )</ID>
+    <ID>MatchingDeclarationName:ViewBinding.kt$FragmentViewBindingDelegate&lt;T : ViewBinding> : ReadOnlyProperty</ID>
+    <ID>TooGenericExceptionCaught:PasswordRepositoryImpl.kt$PasswordRepositoryImpl$exception: Throwable</ID>
+    <ID>TooManyFunctions:BasePasswordManagerFragment.kt$BasePasswordManagerFragment : Fragment</ID>
+    <ID>UseCheckOrError:ViewBinding.kt$FragmentViewBindingDelegate$throw IllegalStateException("Should not attempt to get bindings when Fragment views are destroyed.")</ID>
+  </CurrentIssues>
+</SmellBaseline>

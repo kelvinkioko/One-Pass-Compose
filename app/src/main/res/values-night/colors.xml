@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="brand_neutral">#FFFFFF</color>
+
+    <!-- region Bottom Nav color-->
+    <color name="bottom_nav_color">#50FFFFFF</color>
+    <!-- endregion Text Color -->
+
+    <!-- region Text Color -->
+    <color name="primary_text">#F7F7F7</color>
+    <color name="secondary_text">#929497</color>
+    <color name="hint_text">#aeb0a5</color>
+    <!-- endregion Text Color -->
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ItemAction">
+        <attr name="ActionIcon" format="reference" />
+        <attr name="ActionTitle" format="string" />
+    </declare-styleable>
+</resources>

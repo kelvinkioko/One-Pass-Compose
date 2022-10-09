@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">One Pass</string>
+    <string name="one_pass_logo">One Pass Logo</string>
+    <string name="passwords_stored">Passwords Stored</string>
+    <string name="passwords_compromised">Passwords Compromised</string>
+    <string name="search_websites">Search websites</string>
+    <string name="no_results">No results</string>
+    <string name="no_result_description">We could not find anything. Try searching for something else.</string>
+    <string name="not_compromised">Not Compromised</string>
+    <string name="website">Website</string>
+    <string name="user_name">User name</string>
+    <string name="email_address">E-mail address</string>
+    <string name="password">Password</string>
+    <string name="password_required">Password*</string>
+    <string name="phone_number">Phone number</string>
+    <string name="updated">Updated</string>
+    <string name="created">Created</string>
+    <string name="indicator">Indicator</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="copy_password">Copy password</string>
+    <string name="show_or_hide_password">Show or Hide password</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="add_password">Add password</string>
+    <string name="name">Name*</string>
+    <string name="generate_new">GENERATE NEW</string>
+    <string name="password_length">Password length</string>
+    <string name="use_symbols">Use symbols</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="change_password">Change Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="new_password">New password</string>
+    <string name="login">Login</string>
+    <string name="login_guide">Let’s get you setup with a new account!</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="forgot_password_question">Forgot password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="randomize">Randomize</string>
+    <string name="copy">Copy</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="change_master_password">Change Master Password</string>
+    <string name="logout">Logout</string>
+    <string name="edit_profile">EDIT PROFILE</string>
+    <string name="change_picture">Change Picture</string>
+    <string name="register">Register</string>
+    <string name="register_guide">Let’s get you setup with a new account!</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="reset_password_guide">Let’s get you setup with a new account!</string>
+    <string name="reset">RESET</string>
+    <string name="welcome_one_title">Generate Secure Passwords.</string>
+    <string name="welcome_one_description">Stop using unsecure passwords for your online accounts, level up with OnePass. Get the most secure and difficult-to-crack passwords.</string>
+    <string name="welcome_two_title">All your passwords are here.</string>
+    <string name="welcome_two_description">Store and manage all of your passwords from one place. Don’t remember hundreds of passwords, just remember one.</string>
+    <string name="welcome_three_title">Don’t type, autofill your credentials.</string>
+    <string name="welcome_three_description">Don’t compromise your passwords by typing them in public, let OnePass autofill those and keep your credentials secure.</string>
+    <string name="forgot_password_guide">Let’s get you setup with a new account!</string>
+    <string name="submit">SUBMIT</string>
+    <string name="user_profile">User profile</string>
+    <string name="home_page">Home page</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="add_new">Add new</string>
+
+    <string name="account_exists_error">An account exists with that email. Proceed to login.</string>
+    <string name="account_exists_different_email_error">An account already exists with the email %1$s. Proceed to login.</string>
+
+    <!--    Login resources    -->
+    <string name="login_credentials_error">Login credentials are invalid. Please try again</string>
+
+    <string name="no_account_by_email">No account exists with under that E-mail address</string>
+    <string name="save_password_error">An error occurred while saving your password details</string>
+    <string name="password_match_error">Passwords do not match</string>
+    <string name="reset_password_error">Unable to reset the password</string>
+    <string name="no_profile_message">We could not find your profile. Login out and try again</string>
+    <string name="no_profile">No profile</string>
+    <string name="clip_data_label">OnePassPassword</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="try_again">Try Again</string>
+
+    <string name="unable_delete">Unable to delete password details. Please try again</string>
+</resources>

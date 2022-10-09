@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground" >
+
+    <ImageView
+        android:id="@+id/actionIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginVertical="16dp"
+        android:layout_marginHorizontal="24dp"
+        app:tint="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:src="@drawable/ic_symbol_logout"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/actionTitle"
+        style="@style/MainItemTextAppearance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:letterSpacing="0.1"
+        android:lineSpacingMultiplier="1.3"
+        android:textColor="@color/secondary_text"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/actionIcon"
+        tools:text="Logout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

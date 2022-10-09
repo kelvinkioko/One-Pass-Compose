@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@string/one_pass_logo"
+        app:srcCompat="@drawable/ic_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appLogo" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/storedCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                tools:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/compromisedCard"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    tools:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/storedPasswordsCount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="64sp"
+                        android:textStyle="bold"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/brand_color"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="5" />
+
+                    <TextView
+                        android:id="@+id/storedPasswordsSubTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.1"
+                        android:lineSpacingMultiplier="1.3"
+                        android:text="@string/passwords_stored"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/storedPasswordsCount" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/compromisedCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                tools:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintStart_toEndOf="@id/storedCard" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    tools:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/compromisedPasswordsCount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="64sp"
+                        android:textStyle="bold"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/brand_color"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="0" />
+
+                    <TextView
+                        android:id="@+id/compromisedPasswordsSubTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.1"
+                        android:lineSpacingMultiplier="1.3"
+                        android:text="@string/passwords_compromised"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/compromisedPasswordsCount" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/searchInput"
+                style="@style/SearchInputOutline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:letterSpacing="0.07"
+                app:startIconDrawable="@drawable/ic_symbol_search"
+                app:hintEnabled="false"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/ic_symbol_delete"
+                app:endIconContentDescription="Search delete icon"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintTop_toBottomOf="@+id/storedCard"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:letterSpacing="0.07"
+                    android:singleLine="true"
+                    android:drawableEnd="@drawable/ic_symbol_delete"
+                    android:hint="@string/search_websites" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/passwordsList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintTop_toBottomOf="@id/searchInput"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_stored_password" />
+
+            <ImageView
+                android:id="@+id/emptyLogo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="32dp"
+                app:srcCompat="@drawable/ic_search_empty"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintTop_toBottomOf="@+id/storedCard"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart"
+                android:contentDescription="@string/no_results" />
+
+            <TextView
+                android:id="@+id/emptyLogoTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.1"
+                android:lineSpacingMultiplier="1.3"
+                android:text="@string/no_results"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintTop_toBottomOf="@+id/emptyLogo"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart" />
+
+            <TextView
+                android:id="@+id/emptyLogoSubTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.1"
+                android:lineSpacingMultiplier="1.3"
+                android:text="@string/no_result_description"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+                app:layout_constraintTop_toBottomOf="@+id/emptyLogoTitle"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/contentGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="searchInput, passwordsList" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/emptyGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="emptyLogo, emptyLogoTitle, emptyLogoSubTitle" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="24dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="24dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
