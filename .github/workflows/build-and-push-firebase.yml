@@ -1,6 +1,8 @@
 name: Deployment CI
 
 on:
+  push:
+    branches: [ develop, deployment ]
   pull_request:
     branches: [ develop ]
 
