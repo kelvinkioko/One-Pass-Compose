@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "360647787470",
+    "project_id": "one-pass-ac359",
+    "storage_bucket": "one-pass-ac359.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360647787470:android:3f92983238b310f34ca19f",
+        "android_client_info": {
+          "package_name": "xml.one.pass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360647787470-6702dvjo3a520ik5pvfhsfqe5ccpqpgn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "xml.one.pass",
+            "certificate_hash": "45ec0d701b9be8cd22b41ec4454afd352b49ef6a"
+          }
+        },
+        {
+          "client_id": "360647787470-d94t5qpi2ivj2s7gjiclfbv1hm95koj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYBdBL_mH7-4OMrIv0V7h--zba58Sr8p8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360647787470-d94t5qpi2ivj2s7gjiclfbv1hm95koj7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
